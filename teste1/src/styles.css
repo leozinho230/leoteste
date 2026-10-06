@@ -1,0 +1,100 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #1b4931;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #a3e635;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.page {
+    display: none; /* Esconde todas as páginas por padrão */
+}
+
+.page.active {
+    display: block; /* Mostra apenas a página ativa */
+}
+
+h2 {
+    color: #1b4931;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1b4931;
+    padding-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilos Específicos */
+.destaques-grid, .series-grid, .equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #1b4931;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1b4931;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111827;
+    color: white;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}

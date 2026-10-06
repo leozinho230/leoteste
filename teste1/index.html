@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Saber & Futuro</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu -->
+    <header>
+        <h1>Escola Saber & Futuro</h1>
+        <nav>
+            <a href="#" onclick="mudarPagina('inicio')" id="link-inicio" class="active">Início</a>
+            <a href="#" onclick="mudarPagina('sobre')" id="link-sobre">Sobre</a>
+            <a href="#" onclick="mudarPagina('series')" id="link-series">Séries</a>
+            <a href="#" onclick="mudarPagina('contato')" id="link-contato">Equipe & Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PÁGINA 1: INÍCIO -->
+        <section id="inicio" class="page active">
+            <h2>Bem-vindo à Escola Saber & Futuro</h2>
+            <p>Formando cidadãos preparados para o amanhã com excelência, ética e dedicação.</p>
+            
+            <h3>Destaques</h3>
+            <div class="destaques-grid">
+                <div class="card">
+                    <h3>Feira de Ciências</h3>
+                    <p>Nossos alunos brilharam com projetos inovadores voltados para a sustentabilidade e tecnologia.</p>
+                </div>
+                <div class="card">
+                    <h3>Olimpíada de Matemática</h3>
+                    <p>Parabéns aos estudantes medalhistas na competição estadual deste ano!</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 30px;">Últimas Notícias</h3>
+            <div class="destaques-grid">
+                <div class="card">
+                    <h3>Inscrições Abertas</h3>
+                    <p>O período de matrículas para o próximo ano letivo já está aberto. Venha fazer parte da nossa família!</p>
+                </div>
+                <div class="card">
+                    <h3>Reforma da Quadra</h3>
+                    <p>Nossa quadra poliesportiva foi totalmente reformada para garantir mais conforto nas aulas de educação física.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 2: SOBRE -->
+        <section id="sobre" class="page">
+            <h2>Sobre a Escola</h2>
+            <p><strong>História:</strong> Fundada em 2005, a Escola Saber & Futuro nasceu do sonho de educadores apaixonados por transformar vidas através do ensino de qualidade. Ao longo dos anos, expandimos nossa estrutura, mas mantivemos a essência de acolher cada aluno de forma única.</p>
+            
+            <p><strong>Missão:</strong> Proporcionar uma educação integral, estimulando o pensamento crítico, a criatividade e os valores éticos em um ambiente seguro e acolhedor.</p>
+            
+            <p><strong>Visão:</strong> Ser reconhecida como uma instituição de referência em inovação pedagógica e formação humana na região.</p>
+            
+            <p><strong>Valores:</strong></p>
+            <ul>
+                <li>Respeito à diversidade e ao próximo;</li>
+                <li>Ética e transparência em todas as ações;</li>
+                <li>Compromisso com a excelência acadêmica;</li>
+                <li>Inovação constante no aprendizado.</li>
+            </ul>
+        </section>
+
+        <!-- PÁGINA 3: SÉRIES -->
+        <section id="series" class="page">
+            <h2>Nossas Séries (Ensino Fundamental II)</h2>
+            <p>Oferecemos um currículo dinâmico e estruturado para acompanhar o desenvolvimento dos alunos do 5º ao 9º ano:</p>
+            
+            <div class="series-grid">
+                <div class="card">
+                    <h3>5º Ano</h3>
+                    <p>Transição importante para o Fundamental II, focando na autonomia e consolidação da leitura e escrita avançada.</p>
+                </div>
+                <div class="card">
+                    <h3>6º Ano</h3>
+                    <p>Início do contato com múltiplos professores e disciplinas específicas, estimulando a organização e novos métodos de estudo.</p>
+                </div>
+                <div class="card">
+                    <h3>7º Ano</h3>
+                    <p>Aprofundamento lógico-matemático e incentivo a projetos investigativos e trabalhos em equipe.</p>
+                </div>
+                <div class="card">
+                    <h3>8º Ano</h3>
+                    <p>Desenvolvimento do pensamento crítico aprofundado, debates e preparação para os desafios finais do ensino fundamental.</p>
+                </div>
+                <div class="card">
+                    <h3>9º Ano</h3>
+                    <p>Ano de consolidação e encerramento de ciclo, com foco especial na preparação sólida para o Ensino Médio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 4: EQUIPE E CONTATO -->
+        <section id="contato" class="page">
+            <h2>Equipe Escolar e Contato</h2>
+            <p>Conheça os profissionais que administram e cuidam da nossa escola com dedicação:</p>
+            
+            <div class="equipe-grid">
+                <div class="card">
+                    <h3>Arleson</h3>
+                    <p><strong>Cargo:</strong> Diretor Geral</p>
+                </div>
+                <div class="card">
+                    <h3>Allan</h3>
+                    <p><strong>Cargo:</strong> Coordenador Pedagógico</p>
+                </div>
+                <div class="card">
+                    <h3>Murilo</h3>
+                    <p><strong>Cargo:</strong> Professor de Tecnologias / Informática</p>
+                </div>
+                <div class="card">
+                    <h3>Léo</h3>
+                    <p><strong>Cargo:</strong> Orientador Educacional</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 35px;">Informações de Contato</h3>
+            <p><strong>Endereço:</strong> Rua das Acácias, nº 450 - Bairro Jardim Primavera</p>
+            <p><strong>Telefone:</strong> (92) 98888-7777</p>
+            <p><strong>E-mail:</strong> contato@escolasaberefuturo.com.br</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Escola Saber & Futuro. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script Simples para Alternar as Páginas -->
+    <script>
+        function mudarPagina(paginaId) {
+            // Esconde todas as páginas
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Remove a classe 'active' de todos os links do menu
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => link.classList.remove('active'));
+
+            // Mostra a página selecionada e ativa o link correspondente
+            document.getElementById(paginaId).classList.add('active');
+            document.getElementById('link-' + paginaId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
